@@ -1,23 +1,68 @@
------
-
-Tal Safran
-Computer Systems Organization (Honors)
-V22.0201.001
-
------
-
-# Game Project Proposal #
-
-## “Bill's Last Job”
-(working title) ##
+An epic game written in Assembler during college.
 
 
-It is 2056, the year of the Twelfth Bit. In an act of desperation to regain his former grandeur, one-time billionaire William Henry “Bill” Gates III has stolen the cryogenically frozen brain of Steve Jobs, which contains the secrets to the ubiquitous Mac OS L operating system. 
+```
+                              ______ _____ _      _     _ _____         _  ___  _____ _____
+                              | ___ \_   _| |    | |   ( )  ___|       | | / _ \/  ___|_   _|
+                              | |_/ / | | | |    | |   |/\ `--.        | |/ /_\ \ `--.  | |
+                              | ___ \ | | | |    | |      `--. \       | ||  _  |`--. \ | |
+                              | |_/ /_| |_| |____| |____ /\__/ /       | || | | /\__/ / | |
+                              \____/ \___/\_____/\_____/ \____/        | ||_| |_|____/  \_/
+                                                                       |__________| 
+                                                     ____ ___________ 
+                                                     |_  |  _  | ___ \
+                                                       | | | | | |_/ /
+                                                       | | | | | ___ \
+                                                   /\__/ | \_/ / |_/ /
+                                                   \____/ \___/\____/ 
+```
+
+
+
+End game credits: 
+
+```
+                      ================================================================================   
+                      |                        |   LETS LOAD MY BRAIN    |     ----------------      |   
+                      |       8888888          |   DECODER...            |     |    Windows   |      |   
+                      |      /       \         |_________________________|     |     Vista    |      |   
+                      |      | 0===0 |         |_________________________|     |   LOADING... |      |   
+                      |      |   v   |         |     ----------------    |     |______________|      |   
+                      |       \  -  /          |     |    Windows   |    |           |   |           |   
+                      |        |   |           |     |     Vista    |    |                           |   
+                      |________________________|     |   LOADING... |    |___________________________|   
+                      |    AT LAST... TIME TO  |     |______________|    |     ITLL JUST TAKE A      |   
+                      |    RECLAIM THE WORLD!  |           |   |         |     SEC... OK?            |   
+                      ================================================================================   
+                      |                        |                         |                           |   
+                      |   ----------------     |         8888888         |                           |   
+                      |   |    SYSTEM     |    |        /       \        |                           |   
+                      |   |    ERROR!     |    |        | 0===0 |        |                           |   
+                      |   | TERMINATING.. |    |        |   v   |        |          THE END.         |   
+                      |   |______________ |    |         \  0  /         |                           |   
+                      |         |   |          |          |   |          |                           |   
+                      |________________________|_________________________|                           |   
+                      |       !@!##!@~$        |    I HATE WINDOWS..     |                           |   
+                      |                        |                         |                           |   
+                      ================================================================================   
+```
+
+----------
+
+Original project proposal:
+
+Tal Safran   
+Computer Systems Organization (Honors)   
+V22.0201.001   
+
+# “Bill's Last Job” (working title) #
+It is 2048, the year of the Twelfth Bit. In an act of desperation to regain his former grandeur, one-time billionaire William Henry “Bill” Gates III has stolen the cryogenically frozen brain of Steve Jobs, which contains the secrets to the ubiquitous Mac OS L operating system. 
 
 In order to extract the information, however, Gates will need to deploy his Brain Ushering Gun (B.U.G.) to transport Jobs’ chilled cerebrum through the underground tunnels connecting Apple Headquarters to his subterranean laboratory in Redmond, Washington. This will be no easy task, as the tunnel system will surely contain many perilous and oddly pixilated obstacles along the way.
 
 
-### User-Level Description ###
+## User-Level Description ##
+
 The objective of this game is to launch Steve Jobs' brain from one tunnel to the next, until reaching the lab in Redmond. This is done by correctly positioning and aiming the B.U.G. from the launch pad so the brain safely bypasses all of the obstacles and reaches the target. In later, more advanced levels, some of obstacles will be mobile, meaning you will need to time your shot with precision.
 
 In each level, you will begin with the B.U.G. placed on the launch pad. Using the arrow keys on the keyboard, you will maneuver the UPL within this area (but not outside of it) and then, using a toggle button, aim the cannon in one of six directions (Northeast or Southeast, by either 22.5, 45, or 67.5 degrees), with the purpose of hitting the target. Hitting the spacebar launches Jobs' brain. If the brain reaches the target, you will advance to the next level. Otherwise, your failed attempt will be recorded and you will need to try again. Also, each launch will have a maximum distance. This means that if the brain does not reach the target after traveling a certain extent, it will “explode” and you will need to try again (this will prevent the brain from continuing to ricochet uselessly if the aim is not right, and also prevent “cheap” solutions to the puzzle).
@@ -27,7 +72,8 @@ Reaching the target will be more challenging than it may seem at first. Often, y
 The game will incorporate statistics and record-keeping  as an incentive for competition and repeated play (i.e., “Tal completed Level Two in 4 attempts”). There will be a “High Scores” feature, displaying those players who completed the game (as well as each individual level) with the fewest attempts.
 
 
-### Implementation ###
+## Implementation ##
+
 This game will implement ASCII graphics and will be played using the keyboard. Sound effects will be used for various actions in the game, as well as for the opening and closing sequences.
 
 Basic features: movement of B.U.G., movement of launched brain, sound effects and music, score-keeping and display of high-scores, opening/closing sequences.
